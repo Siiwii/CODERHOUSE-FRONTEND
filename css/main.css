@@ -176,11 +176,9 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-.cuadrado-imagen{
-    width: 17rem;
-    height: 30rem;
-    background-color: #000;
-
+.container-imagen{
+    max-width: 100%;
+    height: auto;
 }
 .container-talles {
     display: flex;
