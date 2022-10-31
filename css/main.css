@@ -1,101 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a,
-a:hover {
-  text-decoration: none;
-  color: #000;
-}
-
-h1 {
+h1, .title-nav {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
-}
+  font-weight: 800; }
 
 body {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
+  font-weight: 400; }
+
+.producto, .prod-descripcion {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; }
+
+.prod-precio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: #f97c59; }
+
+footer {
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+  padding: 20px 0 20px 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
+
+* {
+  margin: 0;
+  padding: 0; }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-.nav-desktop {
-  display: block;
-}
+a, a:hover {
+  text-decoration: none;
+  color: #000; }
 
 .nav1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: around;
   align-items: center;
-  margin: 1rem 2rem;
-}
+  margin: 1rem 2rem; }
 
 .nav2 {
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 1px solid black;
-  background-color: #000;
-}
-
-.title-nav {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-}
-
-.nav2 li {
-  display: block;
-  text-align: center;
-  padding: 0 16px;
-}
-
-.nav2 li:hover {
-  background-color: #fff;
-}
-
-.nav2 li a:hover {
-  color: #000;
-}
-
-.nav2 li a {
-  position: relative;
-  color: #fff;
-  padding: 15px 16px;
-  display: inline-block;
-  text-align: center;
-}
+  background-color: #000; }
+  .nav2 li {
+    display: block;
+    text-align: center;
+    padding: 0 1rem; }
+    .nav2 li:hover {
+      background-color: #fff; }
+    .nav2 li a {
+      position: relative;
+      color: #fff;
+      padding: 15px 16px;
+      display: inline-block;
+      text-align: center; }
+      .nav2 li a:hover {
+        color: #000; }
+  .nav2 li.desktop-list__item.dropdownn:hover ul.nav-dropdown {
+    display: block;
+    background-color: #000; }
 
 .desktop-list__down-icon {
   font-size: 0.9rem;
   line-height: inherit;
-  margin: 0px 0px 0px 10px;
-}
+  margin: 0 0 0 10px; }
 
 ul.nav-dropdown {
   display: none;
   position: absolute;
-  z-index: 1;
-}
-
-.nav2 li.desktop-list__item.dropdownn:hover ul.nav-dropdown {
-  display: block;
-  background-color: #000;
-}
+  z-index: 1; }
 
 .search {
   position: relative;
-  width: 100%;
-}
+  width: 100%; }
 
 #search {
   display: block;
@@ -104,8 +92,7 @@ ul.nav-dropdown {
   font-size: 16px;
   border: 1px solid rgba(10, 10, 10, 0.3);
   background-color: #fff;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 #search-icon {
   position: absolute;
@@ -113,96 +100,57 @@ ul.nav-dropdown {
   top: 22px;
   right: 28%;
   padding: 7px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .cart {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .offcanvas-footer {
   background-color: #000;
-  box-shadow: 0 2px 5px rgb(10 10 10 / 40%);
-}
+  box-shadow: 0 2px 5px rgba(10, 10, 10, 0.4); }
 
 .offcanvas-footer .social {
-  padding: 10px;
-}
+  padding: 10px; }
 
-.producto {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
+@media screen and (max-width: 767px) {
+  .nav-mobile {
+    display: block; }
+  .nav-desktop {
+    display: none; }
+  main {
+    margin-top: 4rem; }
+  .m-footer {
+    margin: 1rem 0; } }
+
+@media screen and (min-width: 767px) {
+  .nav-mobile {
+    display: none; } }
 
 .contprodu {
   margin: 1rem;
   padding: 1rem;
   border-bottom: solid 1px #ccc;
-  overflow: hidden;
-}
-
-.contprodu:hover {
-  box-shadow: 0 1px 6px rgb(10 10 10 / 20%);
-}
-
-.contprodu img {
-  width: 100%;
-  object-fit: cover;
-  transition: all 0.2s;
-}
-
-.contprodu img:hover {
-  transform: scale(1.2);
-}
+  overflow: hidden; }
+  .contprodu:hover {
+    box-shadow: 0 1px 6px rgba(10, 10, 10, 0.2); }
+  .contprodu img {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.2s; }
+    .contprodu img:hover {
+      transform: scale(1.2); }
 
 .box-descripcion {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-}
+  align-items: center;
+  flex-direction: column; }
 
 .prod {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
-  overflow: hidden;
-}
-
-.prod-precio {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  text-align: center;
-  color: rgb(249, 124, 89);
-}
-
-.prod-descripcion {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  text-align: center;
-}
-
-.hero {
-  width: 100%;
-  height: 60vh;
-}
-
-.heroimg {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.container-imagen {
-  max-width: 100%;
-  height: auto;
-}
-.container-talles {
-  display: flex;
-  padding: 1rem 3rem;
-  justify-content: space-between;
-  flex-direction: row;
-}
+  overflow: hidden; }
 
 footer {
   background: rgba(0, 0, 0, 0.2);
@@ -210,64 +158,49 @@ footer {
   padding: 20px 0 20px 0;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-
-footer a,
-footer a:hover {
-  color: #fff;
-  display: inline;
-  padding: 0;
-}
+  font-weight: 400; }
+  footer a,
+  footer a:hover {
+    color: #fff;
+    display: inline;
+    padding: 0; }
+  footer h4 {
+    text-decoration: underline; }
 
 .footer-links a {
-  font-size: 1rem;
-}
-
-footer h4 {
-  text-decoration: underline;
-}
-
-.social a img {
-  width: 1.5rem;
-  height: 1.5rem;
-  position: relative;
-  display: block;
-  margin-right: 0.8rem;
-}
-
-.footer1 {
-  width: 33.33%;
-}
+  font-size: 1rem; }
 
 .social {
   display: flex;
   flex-direction: row;
-  margin: 1rem 0 1rem 0;
-}
-
-.footer1 ul {
-  margin-top: 1rem;
-}
-
-.nav-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-mobile {
+  margin: 1rem 0 1rem 0; }
+  .social a img {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
     display: block;
-  }
+    margin-right: 0.8rem; }
 
-  .nav-desktop {
-    display: none;
-  }
+.footer1 {
+  width: 33.33%; }
+  .footer1 ul {
+    margin-top: 1rem; }
 
-  main {
-    margin-top: 4rem;
-  }
+.container-imagen {
+  max-width: 100%;
+  height: auto; }
 
-  .m-footer {
-    margin: 1rem 0 1rem 0;
-  }
-}
+.container-talles {
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.hero {
+  width: 100%;
+  height: 60vh; }
+
+.heroimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }

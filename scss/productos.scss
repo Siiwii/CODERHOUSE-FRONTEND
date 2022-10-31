@@ -1,0 +1,32 @@
+.contprodu {
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: solid 1px #ccc;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 1px 6px rgba(10, 10, 10, 0.2);
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.box-descripcion {
+    @include flex(center);
+    flex-direction: column;
+}
+
+.prod {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}

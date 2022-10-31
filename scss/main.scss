@@ -1,0 +1,19 @@
+@import "variables.scss";
+@import "fuentes";
+@import "reset.scss";
+@import "header.scss";
+@import "screen.scss";
+@import "productos.scss";
+@import "footer.scss";
+@import "talles.scss";
+
+.hero {
+    width: 100%;
+    height: 60vh;
+}
+
+.heroimg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

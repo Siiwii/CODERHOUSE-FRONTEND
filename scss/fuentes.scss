@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+
+h1, .title-nav {
+    @include Raleway(800);
+  }
+
+body {
+    @include Raleway(400);
+  }
+
+ 
+.producto, .prod-descripcion {
+    text-align: center;
+    @include Raleway(400);
+  }
+
+.prod-precio {
+  @include Raleway(800);
+    text-align: center;
+    color: rgb(249, 124, 89);
+  }
+
+footer {
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 3rem;
+    padding: 20px 0 20px 0;
+    color: #fff;
+    @include Poppins(400);
+  }
