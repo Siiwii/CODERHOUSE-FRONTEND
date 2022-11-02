@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
-h1, .title-nav {
+h1,h2, .title-nav {
     @include Raleway(800);
   }
 
@@ -10,16 +10,27 @@ body {
   }
 
  
-.producto, .prod-descripcion {
+.producto {
     text-align: center;
     @include Raleway(400);
   }
 
 .prod-precio {
-  @include Raleway(800);
+  @include Poppins(800);
     text-align: center;
-    color: rgb(249, 124, 89);
+    color: #D5BA98;
   }
+
+.prod-cuotas {
+  text-align: center;
+  @include Poppins(400);
+}
+
+.service-title {
+  text-align: center;
+  @include Poppins(400);
+  font-size: 1.4rem;
+}
 
 footer {
     background: rgba(0, 0, 0, 0.2);

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
-h1, .title-nav {
+h1, h2, .title-nav {
   font-family: "Raleway", sans-serif;
   font-weight: 800; }
 
@@ -8,16 +8,27 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400; }
 
-.producto, .prod-descripcion {
+.producto {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400; }
 
 .prod-precio {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-align: center;
-  color: #f97c59; }
+  color: #D5BA98; }
+
+.prod-cuotas {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
+
+.service-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem; }
 
 footer {
   background: rgba(0, 0, 0, 0.2);
@@ -43,7 +54,7 @@ a, a:hover {
 
 .nav1 {
   display: flex;
-  justify-content: around;
+  justify-content: space-around;
   align-items: center;
   margin: 1rem 2rem; }
 
@@ -204,3 +215,15 @@ footer {
   height: 100%;
   width: 100%;
   object-fit: cover; }
+
+.page-header {
+  margin: 0.5rem 0 0.5rem 0; }
+
+.service-item {
+  margin: 20px 0 80px 0;
+  padding: 0 40px; }
+  .service-item i, .service-item svg {
+    font-size: 5rem; }
+
+.service-title {
+  margin: 14px 0 14px 0; }
