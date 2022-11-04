@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 
-h1,h2, .title-nav {
+h1,h2 {
     @include Raleway(800);
+    font-size: 3rem;
   }
 
 body {
     @include Raleway(400);
   }
 
+.title-nav {
+  @include Raleway(800);
+}
  
 .producto {
     text-align: center;

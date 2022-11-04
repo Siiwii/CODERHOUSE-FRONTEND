@@ -9,7 +9,7 @@
 
 .hero {
     width: 100%;
-    height: 60vh;
+    height: 100vh;
 }
 
 .heroimg {
@@ -33,4 +33,30 @@
 
 .service-title {
     margin: 14px 0 14px 0;
+}
+
+.instagram-title {
+    display: block;
+    line-height: 42px;
+    color: #000;
+
+    i, svg {
+        font-size: 2rem;
+    }
+}
+
+.section-products, .section-promo, .section-instagram, .section-newsletter {
+    margin-bottom: 70px;
+}
+
+.section-newsletter {
+    padding: 70px 0;
+    background: #D5BA98;
+    color: #fff;
+}
+
+.instagram-user {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: top;
 }
