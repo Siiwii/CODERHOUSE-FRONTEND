@@ -1,17 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
-h1, h2 {
+h1,
+h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 3rem; }
 
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400; }
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800; }
 
 .title-nav {
   font-family: "Raleway", sans-serif;
-  font-weight: 800; }
+  font-weight: 800;
+  font-size: 1rem; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; }
 
 .producto {
   text-align: center;
@@ -34,14 +40,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.4rem; }
-
-footer {
-  background: rgba(0, 0, 0, 0.2);
-  margin-top: 3rem;
-  padding: 20px 0 20px 0;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400; }
 
 * {
   margin: 0;
@@ -67,25 +65,31 @@ a, a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid black;
   background-color: #000; }
   .nav2 li {
     display: block;
-    text-align: center;
-    padding: 0 1rem; }
+    text-align: left;
+    padding: 0; }
     .nav2 li:hover {
       background-color: #fff; }
+      .nav2 li:hover a {
+        color: #000; }
+      .nav2 li:hover .desktop-list__subitem:hover {
+        background-color: black; }
+        .nav2 li:hover .desktop-list__subitem:hover a {
+          color: #fff; }
     .nav2 li a {
       position: relative;
       color: #fff;
-      padding: 15px 16px;
+      padding: 15px 25px;
       display: inline-block;
-      text-align: center; }
+      text-align: left; }
       .nav2 li a:hover {
-        color: #000; }
+        color: black; }
   .nav2 li.desktop-list__item.dropdownn:hover ul.nav-dropdown {
     display: block;
-    background-color: #000; }
+    min-width: 154px;
+    background-color: #fff; }
 
 .desktop-list__down-icon {
   font-size: 0.9rem;
@@ -97,10 +101,6 @@ ul.nav-dropdown {
   position: absolute;
   z-index: 1; }
 
-.search {
-  position: relative;
-  width: 100%; }
-
 #search {
   display: block;
   padding: 12px;
@@ -111,12 +111,23 @@ ul.nav-dropdown {
   margin: 0 auto; }
 
 #search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  display: block;
-  top: 22px;
-  right: 28%;
-  padding: 7px;
+  width: 2rem;
+  height: 50px;
+  top: 1rem;
+  right: 36%;
   cursor: pointer; }
+
+#search-icon > input {
+  flex: 1;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 10px; }
 
 .cart {
   cursor: pointer; }
@@ -175,19 +186,17 @@ ul.nav-dropdown {
   overflow: hidden; }
 
 footer {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(10, 10, 10, 0.1);
   margin-top: 3rem;
-  padding: 20px 0 20px 0;
-  color: #fff;
+  padding-top: 20px;
+  color: #D5BA98;
   font-family: "Poppins", sans-serif;
   font-weight: 400; }
   footer a,
   footer a:hover {
-    color: #fff;
+    color: #D5BA98;
     display: inline;
     padding: 0; }
-  footer h4 {
-    text-decoration: underline; }
 
 .footer-links a {
   font-size: 1rem; }
@@ -208,6 +217,26 @@ footer {
   .footer1 ul {
     margin-top: 1rem; }
 
+.footer-menu-item {
+  margin-bottom: 20px; }
+
+.divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  clear: both;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.1); }
+
+.footer-payments img {
+  width: auto;
+  max-height: 25px;
+  margin: 2px; }
+
+.footer-legal {
+  padding: 20px 0;
+  font-size: 12px;
+  background-color: #D5BA98;
+  color: #fff; }
+
 .container-imagen {
   max-width: 100%;
   height: auto; }
@@ -217,6 +246,9 @@ footer {
   padding: 1rem 3rem;
   justify-content: space-between;
   flex-direction: row; }
+
+body {
+  background-color: #fff; }
 
 .hero {
   width: 100%;

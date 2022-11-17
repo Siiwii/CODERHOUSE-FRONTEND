@@ -1,19 +1,15 @@
 footer {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(10,10,10,0.1);
     margin-top: 3rem;
-    padding: 20px 0 20px 0;
-    color: #fff;
+    padding-top: 20px;
+    color: #D5BA98;
     @include Poppins(400);
 
     a,
     a:hover {
-        color: #fff;
+        color: #D5BA98;
         display: inline;
         padding: 0;
-    }
-
-    h4 {
-        text-decoration: underline;
     }
 }
 
@@ -41,4 +37,28 @@ footer {
     ul {
         margin-top: 1rem;
     }
+}
+
+.footer-menu-item {
+    margin-bottom: 20px;
+}
+
+.divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+    border-bottom: 1px solid rgba(10,10,10,0.1);
+}
+
+.footer-payments img {
+    width: auto;
+    max-height: 25px;
+    margin: 2px;
+}
+
+.footer-legal {
+    padding: 20px 0;
+    font-size: 12px;
+    background-color: #D5BA98;
+    color: #fff;
 }
