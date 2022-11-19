@@ -195,8 +195,7 @@ footer {
   footer a,
   footer a:hover {
     color: #D5BA98;
-    display: inline;
-    padding: 0; }
+    display: inline; }
 
 .footer-links a {
   font-size: 1rem; }
@@ -205,12 +204,18 @@ footer {
   display: flex;
   flex-direction: row;
   margin: 1rem 0 1rem 0; }
-  .social a img {
-    width: 1.5rem;
-    height: 1.5rem;
-    position: relative;
-    display: block;
-    margin-right: 0.8rem; }
+  .social a {
+    margin-right: 0.8rem;
+    background-color: #D5BA98;
+    padding: 10px;
+    border-radius: 50%; }
+    .social a:hover {
+      background-color: #000; }
+    .social a img {
+      width: 1.5rem;
+      height: 1.5rem;
+      position: relative;
+      display: block; }
 
 .footer1 {
   width: 33.33%; }
@@ -285,6 +290,14 @@ body {
   padding: 70px 0;
   background: #D5BA98;
   color: #fff; }
+
+.form-control-big {
+  padding: 17px 15px; }
+  .form-control-big::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #D5BA98; }
 
 .instagram-user {
   display: inline-block;
